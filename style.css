@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*
+color  rgbargb(132, 0, 255);
+font-family: Verdana, sans-serif;
+*/
+
+header {
+    background-color: wheat;
+    width: 100%;
+    position: fixed;
+    z-index: 999 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+header .logo{
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: rgba(234, 13, 13, 0.848);
+}
+
+section{
+    padding: 100px 200px ;
+}
+
+.main{
+    width: 100% ;
+    min-height: 100vh ;
+    display: flex ;
+    align-items: center;
+    background: url(image/imag2.jpeg) no-repeat ;
+    background-size: cover;
+    background-position:center ;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    color: rgb(132, 0, 255);
+    display: inline-block ;
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btu {
+    color: white;
+    background-color: rgb(132, 0, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    /*transition: 0.7s ease;*/
+    animation-name: texte;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texte{
+    to{
+     opacity: 0.2 ;
+     transform: scale(1.1);
+    }
+ }
+
+.social-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color: rgb(132, 0, 255);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 19.25em;
+    box-shadow: 0 5px 25px 0px ;
+    border-radius: 10px ;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: rgb(132, 0, 255);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: rgb(132, 0, 255);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: black;
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid white ;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100% ;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: rgb(132, 0, 255); ;
+}
+
+.more-details:hover{
+    color: rgba(234, 13, 13, 0.848) ;
+}
+
+.contant .icon{
+    font-size: 4.5em ;
+}
+
+.contant .info h3{
+    color: #000;
+}
+
+.contant .info p {
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span{
+    color: rgb(132, 0, 255);;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding-right: 12px;
+}
+
+
+
+
+@media (min-width:200px) and (max-width:520px ) {
+    header{
+        padding: 12px 11px;
+        display: block;
+    }
+
+    .navigation{
+        padding-left: 10px;
+        
+    }
+
+    section{
+        padding: 100px 11px ;
+    }
+
+    .main h2 span {
+        font-size: 1.5em;
+    }
+
+    .main h3 {
+        font-size: 1.3em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .card{
+        width: 19.25em;
+    }
+
+}
+
+
+
+@media (min-width:521px) and (max-width:666px ) {
+    header{
+        padding: 12px 30px
+    }
+
+    .navigation{
+        padding-left: 20px;
+        
+    }
+
+    section{
+        padding: 100px 30px ;
+    }
+
+    .card{
+        width: 26.25em;
+    }
+}
+
+
+@media (min-width:667px) and (max-width:1023px ) {
+    header{
+        padding: 20px 100px;
+    }
+
+    .navigation{
+        padding-left: 25px;
+        
+    }
+
+    section{
+        padding: 100px 100px ;
+    }
+
+    .card{
+        width: 13.25em;
+    }
+}
